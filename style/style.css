@@ -1,0 +1,58 @@
+.header {
+  background-image: url(../img/background_header.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  transition: 1s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transition: 1s;
+  color: #fff;
+  z-index: 3;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+.header__logo {
+  flex: 0 0 20%;
+  height: 9vh;
+}
+.header__logo_img {
+  width: 35%;
+}
+.header__nav {
+  flex: 0 1 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav_link {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.header_hidden {
+  transform: translateY(-100%);
+}
+/* .content {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 60px 30px;
+} */
+.main {
+  padding-top: 130px;
+  background-image: url(../img/kedr.jpg);
+  background-size: cover;
+  /* height: 100vh; */
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  color: #e9b219;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
