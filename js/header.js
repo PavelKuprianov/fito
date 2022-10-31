@@ -24,9 +24,14 @@ document.addEventListener('DOMContentLoaded', () => { // DOM готов к вз�
       prevScroll = currentScroll // записываем на сколько прокручена страница на данный момент
 
     })
-
   }
-
   onScrollHeader() // вызываем основную функцию onScrollHeader
+});
 
+
+[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function () {
+    img.removeAttribute('data-src');
+  };
 });
