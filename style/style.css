@@ -32,23 +32,48 @@
 .header__nav_link {
   display: block;
   font-size: 20px;
-  color: #fff;
+  color: rgb(201, 197, 197);
   font-weight: bold;
 }
 .header_hidden {
   transform: translateY(-100%);
 }
 .main {
-  width: 100%;
-  padding-top: 130px;
-  background-image: url(../img/kedr.jpg);
-  background-size: cover;
-  /* height: 100vh; */
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  color: #e9b219;
-  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   position: absolute;
   top: 0;
+  width: 100%;
+  padding-top: 50px;
+  background-image: url(../img/kedr.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.content {
+  padding-top: 10vh;
+  color: rgb(201, 197, 197);
+  align-items: center;
+  position: relative;
+  top: 0;
+}
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.text {
+  font-size: 40px;
+  line-height: 1.5;
+}
+.hero {
+  position: relative;
+  padding-top: 65%;
 }
