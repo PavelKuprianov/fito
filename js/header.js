@@ -28,10 +28,36 @@ document.addEventListener('DOMContentLoaded', () => { // DOM готов к вз�
   onScrollHeader() // вызываем основную функцию onScrollHeader
 });
 
+//Ленивая загрузка изображений
 
-[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
-  img.setAttribute('src', img.getAttribute('data-src'));
-  img.onload = function () {
-    img.removeAttribute('data-src');
-  };
-});
+window.onload = () => {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.src = entry.target.dataset.src
+        observer.unobserve(entry.target)
+      }
+    })
+  }, { threshold: 0.5 })
+  document.querySelectorAll('img[data-src]').forEach(img => observer.observe(img))
+}
+
+//Появление изображений и текста при скроле
+
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.text');
+let images = document.querySelectorAll('.img');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+for (let im of images) {
+  observer.observe(im);
+}

@@ -75,6 +75,13 @@ h1 {
 .text {
   font-size: 32px;
   line-height: 1.5;
+  opacity: 0;
+  transform: translateY(100%);
+}
+.text.element-show {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+  transform: translateY(0%);
 }
 .hero {
   position: relative;
@@ -108,14 +115,15 @@ h1 {
   position: relative;
   z-index: 5;
 }
-.hero__container_img img {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-.hero__container_img img[data-src] {
+.img {
   opacity: 0;
+  transform: translateY(100%);
 }
-
+.img.element-show {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+  transform: translateY(0%);
+}
 .hero__container_text {
   flex: 0 0 65%;
 }
