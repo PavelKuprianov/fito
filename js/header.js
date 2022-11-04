@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => { // DOM готов к вз�
 
   const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
 
-    const header = document.querySelector('.header') // находим header и записываем в константу
+    const header = document.querySelector('.header__menu') // находим header и записываем в константу
 
     let prevScroll = window.pageYOffset // узнаем на сколько была прокручена страница ранее
     let currentScroll // на сколько прокручена страница сейчас (пока нет значения)

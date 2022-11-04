@@ -15,80 +15,99 @@
 
 <body>
   <header class="header">
-    <div class="head container">
-      <div class="header__logo">
-        <img src="img/1_fito.png" alt="Фитобочка" class="header__logo_img">
+    <div class="header__top">
+      <div class="top__logo container">
+        <div class="top__logo__reserv"></div>
+        <img class="top__logo_img" src="img/logo_example1.png" alt="Логотип">
+        <a class="top__logo_tel" href=”tel:+79998887766”>+7(999)888-77-66</a>
       </div>
-      <nav class="header__nav">
-        <a href="#" class="header__nav_link">Главная</a>
-        <a href="#" class="header__nav_link">Уход за бочками</a>
-        <a href="#" class="header__nav_link">Каталог</a>
-        <a href="#" class="header__nav_link">Контакты</a>
-      </nav>
+    </div>
+    <div class="header__menu">
+      <div class="head container">
+        <!-- <div class="header__logo">
+          <img src="img/1_fito.png" alt="Фитобочка" class="header__logo_img">
+        </div> -->
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#what" class="header__nav_link">Что&nbsp;такое&nbsp;фитобочки?</a></li>
+            <li class="header__item"><a href="#" class="header__nav_link">Лечебные&nbsp;свойства</a></li>
+            <li class="header__item"><a href="#" class="header__nav_link">Преимущества</a></li>
+            <li class="header__item"><a href="#" class="header__nav_link">Каталог</a></li>
+            <li class="header__item"><a href="#" class="header__nav_link">Оплата</a></li>
+            <li class="header__item"><a href="#" class="header__nav_link">Доставка</a></li>
+            <li class="header__item"><a href="#" class="header__nav_link">Гарантия</a></li>
+            <li class="header__item"><a href="#" class="header__nav_link">Уход</a></li>
+          </ul>
+
+          <button class="header__btn-open">
+            <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="30" height="2" fill="#eedbcc" />
+              <rect y="8" width="30" height="2" fill="#eedbcc" />
+              <rect y="16" width="30" height="2" fill="#eedbcc" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
     </div>
   </header>
 
   <main class="main">
     <section class="container">
       <div class="content">
-        <h1>Фитобочкин</h1>
         <p class="text">
           Мы занимаемся производством фитобочек из натурального горно-алтайского кедра с 2002 года.
           За эти годы мы разработали технологии и создали уникальное производство, позволяющее
           изготавливать качественные бани-бочки, которые придутся по вкусу самому притязательному
           покупателю.
         </p>
+        <div class="hero__container">
+          <div class="hero__container_text">
+            <p class="text">
+              В современном мире огромное количество людей предпочитают проживать в небольших городских квартирах, и они
+              зачастую не имеют возможности наслаждаться банными процедурами, посещая традиционные бани или сауны.
+              Кедровая
+              фитобочка в данной ситуации является лучшим решением. Бочка не только позволяет получить наслаждение от
+              банных
+              процедур, но и в некоторых моментах баня-бочка выигрышней традиционной бани или сауны.
+            </p>
+          </div>
 
+          <div class="hero__container_img">
+            <img class="img" data-src="img/women.jpg" alt="Изображение бочки">
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique hic, repellendus vitae numquam
-    distinctio sequi fugiat, ad rem error, recusandae facere illum. Quas, fugit itaque culpa consectetur vero eius quia.
-  </p>
-
   <section class="hero">
     <div class="container">
-      <h2 class="title">Почему фитобочки?</h2>
+      <h2 id="what" class="title">Что такое фитобочки?</h2>
       <div class="hero__container">
+        <div class="hero__container_img">
+          <img class="img" data-src="img/1_fito.png" alt="Изображение бочки">
+        </div>
         <div class="hero__container_text">
           <p class="text">
-            В современном мире огромное количество людей
-            предпочитают проживать в небольших городских квартирах, в которых о
-            банных процедурах можно только мечтать, реализуя эти мечты путём
-            посещения традиционных бань или саун.
-          </p>
-          <p class="text lazyload" loading="lazy">
-            Кедровая фитобочка в данной ситуации является лучшим решением. Бочка не только позволяет получить
-            наслаждение
-            от
-            банных процедур, но и в некоторых моментах баня-бочка выигрышней традиционной бани или сауны.
+            Классическая фитобочка представляет из себя бочку цилиндрической формы в которую может поместиться взрослый
+            человек а возможно даже два, для осуществления банных процедур. Тело человека в момент банного отдыха
+            находится в бочке, но голова остаётся снаружи, тем самым не лишая его свежего воздуха, что действительно
+            выигрышно отличает фитобочку от обычной парилки. </p>
+          <p class="text">
+            Фитобочка работает от нагревательной установки
+            (парогенератора). Пар подаётся внутрь фитобочки с помощью парогенератора. В конструкции предусмотрен слив
+            для удаления воды и термостойкий паропровод, имеющий штуцер для соединения с парогенератором. Небольшие
+            габариты кабины обеспечивают атмосферу с плотной насыщенностью паром и, как следствие, более глубокое
+            прогревание тела. За счет этого поры кожи интенсивно открываются и очищаются, одновременно впитывая целебные
+            вещества, входящие в состав фитосборов и эфирных масел. </p>
+          <p class="text">
+            Температура внутри бочки достигает в среднем 45-50
+            градусов, что позволяет телу эффективно прогреться, коже очиститься и получить все целебные свойства бочки,
+            при этом не перегревая организм.
           </p>
         </div>
-        <div class="hero__container_img">
-          <img class="img" data-src="img/women.jpg" alt="Изображение бочки">
-        </div>
+
       </div>
 
     </div>
