@@ -162,14 +162,16 @@ h1 {
   transition: all 0.8s ease-in-out;
 }
 .details.vision {
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   padding-bottom: 10vh;
-  height: 100vh;
+  /* min-width: 100vh; */
+  height: 100%;
   opacity: 1;
   transition: all 0.8s ease-in-out;
 }
 .details__text {
   margin-bottom: 2em;
+  padding-top: 3em;
   color: #22181b;
   font-weight: 700;
   font-size: 36px;
@@ -325,6 +327,9 @@ h1 {
   .cross:hover {
     color: #b66735;
   }
+  .details__plus {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -373,6 +378,10 @@ h1 {
   .cross {
     font-size: 26px;
   }
+  .details__text {
+    padding-top: 3em;
+  }
+
 }
 
 @media (max-width: 500px) {
