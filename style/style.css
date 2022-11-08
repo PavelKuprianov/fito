@@ -94,7 +94,6 @@
   background-attachment: fixed;
   display: flex;
   align-items: center;
-
 }
 .main::before {
   content: '';
@@ -107,10 +106,38 @@
 }
 .content {
   padding-top: 20vh;
- 
   color: #e2c2a9;
   position: relative;
   z-index: 2;
+}
+.content__button {
+  max-width: 10em;
+  margin: 0 auto;
+  position: relative;
+}
+.content__button_img {
+  animation-name: rotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+@keyframes rotation {
+  0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(360deg);
+  }
+}
+.content__button_text {
+  position: absolute;
+  text-align: center;
+  top: 3.5em;
+  left: 2em;
+  color: #38272d;
+  font-size: 1em;
+  font-weight: 700;
 }
 h1 {
   text-align: center;
@@ -121,8 +148,66 @@ h1 {
   position: relative;
   font-size: 36px;
   line-height: 1.5;
-  margin-bottom: 1vh;
+  margin-bottom: 2em;
   z-index: 4;
+}
+.details {
+  display: flex;
+  align-items: center;
+  height: 0;
+  opacity: 0;
+  background-image: url(../img/interier.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease-in-out;
+}
+.details.vision {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 100vh;
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+}
+.details__text {
+  margin-bottom: 2em;
+  color: #22181b;
+  font-weight: 700;
+  font-size: 36px;
+}
+.details__plus {
+  gap: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.details__plus_item {
+  position: relative;
+  padding: 10px;
+  flex: 0 0 20%;
+  gap: 2em;
+  border: 2px solid #22181b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details__plus_item::after {
+  content: '';
+  background-color: rgba(228, 213, 213, 0.6);
+  inset: 0;
+  position: absolute;
+}
+.details__plus_item svg {
+  position: relative;
+  z-index: 5;
+}
+.details-text {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #22181b;
+  z-index: 5;
 }
 .text_appearance{
   opacity: 0;
