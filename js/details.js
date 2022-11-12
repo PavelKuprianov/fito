@@ -1,18 +1,17 @@
 const button = document.querySelector('.content__button')
 const buttonText = button.querySelector('.content__button_text')
-const main = document.querySelector('.main')
-const details = document.querySelector('.details')
+const plus = document.querySelector('.plus')
 
 
 
 button.addEventListener('click', () => {
-  details.classList.toggle('vision')
-  console.log(details.classList.contains('vision'));
-  if (details.classList.contains('vision')) {
-    buttonText.style.left = '2.5em'
+  plus.classList.toggle('vision')
+  console.log(plus.classList.contains('vision'));
+  if (plus.classList.contains('vision')) {
+    buttonText.style.left = '3.5em'
     buttonText.innerHTML = 'Свернуть<br> окно'
   } else {
     buttonText.style.left = '1.8em'
-    buttonText.innerHTML = 'Подробнее <br> о фитобочках'
+    buttonText.innerHTML = 'Подробнее <br> о преимуществах'
   }
 })
