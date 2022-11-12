@@ -238,12 +238,12 @@ h1 {
 }
 .text_appearance{
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(100%);
 }
 .text_appearance.element-show {
   opacity: 1;
   transition: all 1s ease-in-out;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 .hero {
   position: relative;
