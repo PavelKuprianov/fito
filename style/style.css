@@ -93,7 +93,8 @@
   top: 0;
   width: 100%;
   background-image: url(../img/background_header.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-x;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -108,15 +109,15 @@
   left: 0;
 } */
 .main__logo {
-  padding-top: 10vh;
-  margin-bottom: 5vh;
+  padding-top: 5vh;
+  /* margin-bottom: 5vh; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .content {
   padding-left: 4vw;
-  color: #e2c2a9;
+  color: #f4d7ad;
   position: relative;
   z-index: 2;
 }
@@ -157,7 +158,7 @@ h1 {
 }
 .text {
   position: relative;
-  font-size: 56px;
+  font-size: 3em;
   line-height: 1.5;
   margin-bottom: 2em;
   z-index: 4;
