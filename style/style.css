@@ -74,9 +74,10 @@
   margin-right: 45px;
 }
 .header__nav_link {
+  font-family: 'ViaodaLibre-Regular';
   font-size: 20px;
   color: #e2c2a9;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .header__btn-open {
   display: none;
@@ -117,13 +118,13 @@
 }
 .content {
   padding-left: 4vw;
-  color: #f4d7ad;
+  color: rgba(255, 255, 255, 0.4);
   position: relative;
   z-index: 2;
 }
 .content__button {
   max-width: 12em;
-  margin: 10px auto;
+  margin: 3em auto;
   position: relative;
   z-index: 2;
 }
@@ -158,6 +159,7 @@ h1 {
 }
 .text {
   position: relative;
+  font-family: 'ViaodaLibre-Regular';
   font-size: 3em;
   line-height: 1.5;
   margin-bottom: 2em;
@@ -176,14 +178,14 @@ h1 {
   transition: all 0.8s ease-in-out;
   z-index: 11;
 }
-.details::after {
+/* .details::after {
   content: '';
   position: absolute;
   inset: 0;
   background-color: #e1c6a3;
   opacity: 0.3;
   z-index: 1;
-}
+} */
 .plus {
   /* position: absolute; */
   background-image: url(../img/plus-back.jpg);
@@ -201,11 +203,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3em;
 }
 .details__text {
   flex: 1 0 70%;
-  margin-bottom: 10em;
-  padding-top: 3em;
+  margin-bottom: 2em;
+  padding-top: 2em;
   padding-left: 13em;
   padding-right: 2em;
   color: #43230A;
@@ -253,7 +256,7 @@ h1 {
 .text_appearance.element-show {
   opacity: 1;
   transition: all 1s ease-in-out;
-  transform: translateY(0%);
+  transform: translateY(10%);
 }
 .hero {
   position: relative;

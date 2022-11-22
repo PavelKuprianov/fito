@@ -24,7 +24,6 @@
        url('../fonts/Lora-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/Lora-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* roboto-700 - latin_cyrillic */
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -32,6 +31,22 @@
   src: local('Lora-Bold'),
        url('../fonts/Lora-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/Lora-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Antic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('AnticDidone-Regular'),
+       url('../fonts/AnticDidone-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/AnticDidone-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'ViaodaLibre-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ViaodaLibre-Regular'),
+       url('../fonts/ViaodaLibre-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ViaodaLibre-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
