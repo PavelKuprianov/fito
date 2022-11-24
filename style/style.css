@@ -118,7 +118,7 @@
 }
 .content {
   padding-left: 4vw;
-  color: rgba(256, 256, 256, 0.4);
+  color: rgba(256, 256, 256, 0.6);
   position: relative;
   z-index: 2;
 }
