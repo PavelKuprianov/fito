@@ -172,7 +172,7 @@ h1 {
   height: 100vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-image: url(../img/interier.jpg);
+  background-image: url(../img/photo_2022-11-24_13-13-55.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.8s ease-in-out;
@@ -211,7 +211,7 @@ h1 {
   padding-top: 2em;
   padding-left: 13em;
   padding-right: 2em;
-  color: rgba(105, 74, 6, 0.4);
+  color: rgba(256, 256, 256, 0.6);
   font-weight: 700;
   font-size: 2em;
 }
