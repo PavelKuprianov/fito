@@ -172,7 +172,7 @@ h1 {
   height: 100vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-image: url(../img/ch-bel.jpg);
+  background-image: url(../img/photo_2022-12-01_01-00-35.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.8s ease-in-out;
@@ -262,9 +262,9 @@ h1 {
   position: relative;
   padding-top: 8vh;
   padding-bottom: 8vh;
-  background-image: url(../img/background_hero.jpg);
+  background-image: url(../img/photo_2022-12-01_01-00-30.jpg);
   background-repeat: repeat-x;
-  background-size: cover;
+  background-size: contain;
   color: #eedbcc;
   z-index: 20;
 }
