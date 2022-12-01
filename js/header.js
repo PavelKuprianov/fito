@@ -53,11 +53,11 @@ function onEntry(entry) {
 }
 let options = { rootMargin: '5px', threshold: [0.2] };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.text_appearance');
+// let elements = document.querySelectorAll('.text_appearance');
 let images = document.querySelectorAll('.img');
-for (let elm of elements) {
-  observer.observe(elm);
-}
+// for (let elm of elements) {
+//   observer.observe(elm);
+// }
 for (let im of images) {
   observer.observe(im);
 }
